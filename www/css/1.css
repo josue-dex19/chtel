@@ -1,0 +1,267 @@
+body {
+    font-family: cursive;
+   overflow-x: hidden;
+}
+
+#logo {
+    float: left;
+    color: whitesmoke;
+    z-index: 10000;
+    font-family: italic;
+    border: solid 2px rgb(184, 184, 132);
+}
+
+#navbar {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    display: inline block;
+    z-index: 10000;
+}
+
+#navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar a:hover {
+    color: black;
+    border-bottom: solid 2px red;
+}
+
+.topnav a {
+    display: inline-block;
+    color: rgb(98, 103, 107);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+.topnav a:hover {
+    border-bottom: 3px solid red;
+}
+
+header {
+    position: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel {
+    z-index: -99;
+}
+
+
+/* keeps this behind all content */
+
+.carousel .item {
+    position: rel;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.carousel .one {
+    background: url('../bg\ \(1\).jpg');
+    background-size: cover;
+    -moz-background-size: cover;
+}
+
+.carousel .two {
+    background: url('../images/couverture.jpg');
+    background-size: cover;
+    -moz-background-size: cover;
+}
+
+.carousel .three {
+    background: url('../bg\ \(4\).jpg');
+    background-size: cover;
+    -moz-background-size: cover;
+}
+
+.carousel .active.left {
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 720px) {
+    body{
+        overflow-x: hidden;
+        
+    }
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+    .right{
+        display:inline-block;
+    }
+    #navbar{
+        display: block;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#button1 {
+    margin-left: 80%;
+}
+
+#button2 {
+    margin-top: 2%;
+    margin-left: 80%;
+}
+
+h1 {
+    color: darkturquoise;
+    text-align: center;
+}
+
+.un {
+    margin-left: 20%;
+}
+
+.ps {
+    background-color: transparent;
+}
+
+.dropbtn1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+    margin-left: 45%;
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content1 a:hover {
+    background-color: #ddd;
+}
+
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+
+.dropdown1:hover .dropbtn1 {
+    background-color: #3e8e41;
+}
+
+.dropdown1:hover {
+    animation: normal;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.productinfo:hover .overlay {
+    opacity: 1;
+}
+
+
+/*------------------
+  Footer section
+---------------------*/
+
+.footer-section {
+    background: #222222;
+    padding: 12px;
+}
+
+.footer-section .copyright {
+    color: #505050;
+    margin-bottom: 0;
+    line-height: normal;
+}
